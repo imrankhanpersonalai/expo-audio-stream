@@ -482,7 +482,7 @@ class SoundPlayer {
     private func playNextInQueue() {
         Logger.debug("[SoundPlayer] Playing audio [ \(audioQueue.count)]")
         
-        // Start node if not already playing
+        // Start the audio player node if it's not already playing
         if !self.audioPlayerNode.isPlaying {
             Logger.debug("[SoundPlayer] Starting Player")
             self.audioPlayerNode.play()
